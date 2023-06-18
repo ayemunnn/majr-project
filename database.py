@@ -1,14 +1,13 @@
-import streamlit as st  # pip install streamlit
-from deta import Deta  # pip install deta
+import streamlit as st 
+from deta import Deta  
 
 
-# Load the environment variables
 DETA_KEY = "d0tjmfdmrtx_Cr37LBphpcVbBPqSibnnLkN1nnxETjau"
 
-# Initialize with a project key
+
 deta = Deta(DETA_KEY)
 
-# This is how to create/connect a database
+
 db = deta.Base("mybase")
 
 
